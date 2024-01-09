@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://oa4waysdaxr5"]
+
+[ext_resource type="Script" path="res://Boxes/soft_collison.gd" id="1_grsuf"]
+
+[node name="SoftCollison" type="Area2D"]
+collision_layer = 32
+collision_mask = 32
+script = ExtResource("1_grsuf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

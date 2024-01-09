@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnp2m06ynxldu"]
+
+[ext_resource type="Script" path="res://Boxes/hurt_box.gd" id="1_iv40f"]
+
+[node name="HurtBox" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_iv40f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="invincible_ended" from="." to="." method="_on_invincible_ended"]
+[connection signal="invincible_started" from="." to="." method="_on_invincible_started"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

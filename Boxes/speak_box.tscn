@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cgcr1jsjgina0"]
+
+[node name="SpeakBox" type="Area2D"]
+collision_layer = 64
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
