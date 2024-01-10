@@ -1,6 +1,7 @@
-[gd_scene load_steps=66 format=3 uid="uid://yc57mmoyb2ub"]
+[gd_scene load_steps=68 format=3 uid="uid://yc57mmoyb2ub"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_f0yjq"]
+[ext_resource type="Resource" uid="uid://b5u0he8tbacjr" path="res://inventory/playerInv.tres" id="2_501lf"]
 [ext_resource type="Texture2D" uid="uid://cjx1ccjt6i8mv" path="res://Player/Player.png" id="2_ki2q3"]
 [ext_resource type="Shader" path="res://white_color.gdshader" id="2_q7i84"]
 [ext_resource type="PackedScene" uid="uid://dy3o6qiwvw647" path="res://Boxes/hit_box.tscn" id="3_3ruse"]
@@ -10,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cnp2m06ynxldu" path="res://Boxes/hurt_box.tscn" id="5_ldt70"]
 [ext_resource type="Texture2D" uid="uid://cbewthn26u4jg" path="res://Shadows/MediumShadow.png" id="6_wuscp"]
 [ext_resource type="PackedScene" uid="uid://cgcr1jsjgina0" path="res://Boxes/speak_box.tscn" id="10_f1xhq"]
+[ext_resource type="PackedScene" uid="uid://b6m766qqelvlw" path="res://inventory/inv_ui.tscn" id="12_1l7gw"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4o33w"]
 shader = ExtResource("2_q7i84")
@@ -859,6 +861,7 @@ radius = 8.0
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
 script = ExtResource("1_f0yjq")
+inv = ExtResource("2_501lf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_4o33w")
@@ -927,6 +930,12 @@ libraries = {
 [node name="CollisionShape2D" parent="SpeakBox" index="0"]
 shape = SubResource("CircleShape2D_eexxi")
 debug_color = Color(0.631373, 0.498039, 0.486275, 0.419608)
+
+[node name="inv_UI" parent="." instance=ExtResource("12_1l7gw")]
+offset_left = -33.0
+offset_top = -89.0
+offset_right = 7.0
+offset_bottom = -49.0
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="invincible_ended" from="HurtBox" to="." method="_on_hurt_box_invincible_ended"]

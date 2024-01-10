@@ -1,14 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://dlaytl7kncqbx"]
+[gd_scene load_steps=7 format=3 uid="uid://dlaytl7kncqbx"]
 
 [ext_resource type="Texture2D" uid="uid://ccjvew7hu7fn7" path="res://World/Grass.png" id="1_diukl"]
 [ext_resource type="Script" path="res://World/grass.gd" id="1_es6tg"]
+[ext_resource type="Resource" uid="uid://dyi5euhhf8bne" path="res://inventory/item/grass.tres" id="2_hb58j"]
 [ext_resource type="PackedScene" uid="uid://cnp2m06ynxldu" path="res://Boxes/hurt_box.tscn" id="3_q0gtk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nm0u1"]
 size = Vector2(18.8889, 18.8889)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_3e8as"]
+radius = 31.0483
+
 [node name="Grass" type="Node2D"]
 script = ExtResource("1_es6tg")
+item = ExtResource("2_hb58j")
 
 [node name="Grass" type="Sprite2D" parent="."]
 texture = ExtResource("1_diukl")
@@ -23,6 +28,15 @@ position = Vector2(8, 8)
 scale = Vector2(0.7, 0.7)
 shape = SubResource("RectangleShape2D_nm0u1")
 
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8, 8)
+shape = SubResource("CircleShape2D_3e8as")
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 
 [editable path="HurtBox"]

@@ -23,6 +23,7 @@ var dialog = Dialog
 # @onready var swordHitBox = $HitBoxPivot/SwordHitBox
 @onready var hurtBox = $HurtBox
 @onready var blinkAnimationPlayer = $BlinkAnimationPlayer
+@export var inv: Inv
 
 func _ready():
 	# Make random seed different everytime
@@ -98,3 +99,10 @@ func _on_hurt_box_invincible_started():
 	
 func _on_hurt_box_invincible_ended():
 	blinkAnimationPlayer.play("Stop")
+	
+func player():
+	pass
+	
+func collect(item):
+	print(item)
+	inv.insert(item)
