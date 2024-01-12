@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xplx0uxbky4t"
-path="res://.godot/imported/设置菜单-内容框.png-a3b0d3dac297d768701764f2d3977895.ctex"
+uid="uid://cpd2w5k4e21rb"
+path="res://.godot/imported/Titleback.png-a070d4aa38000516406d8f168cecdf0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/设置菜单-内容框.png"
-dest_files=["res://.godot/imported/设置菜单-内容框.png-a3b0d3dac297d768701764f2d3977895.ctex"]
+source_file="res://素材/Titleback.png"
+dest_files=["res://.godot/imported/Titleback.png-a070d4aa38000516406d8f168cecdf0e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://37uqwokcd4iq"
-path="res://.godot/imported/心电图仪器.png-3170cc5bb1325fc8798603c048d289b7.ctex"
+uid="uid://4th3qq7t4krw"
+path="res://.godot/imported/Role.png-b6210b384f632cafcaa610e16017a6e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/心电图仪器.png"
-dest_files=["res://.godot/imported/心电图仪器.png-3170cc5bb1325fc8798603c048d289b7.ctex"]
+source_file="res://素材/Role.png"
+dest_files=["res://.godot/imported/Role.png-b6210b384f632cafcaa610e16017a6e6.ctex"]
 
 [params]
 

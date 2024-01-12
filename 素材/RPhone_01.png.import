@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkc8itte6bm0q"
-path="res://.godot/imported/心电图存活.png-71d6b130c25976f7420c9ca8a044e769.ctex"
+uid="uid://bbwa7g58jvkml"
+path="res://.godot/imported/RPhone_01.png-9bea341900f80f97bcea0003245080a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/心电图存活.png"
-dest_files=["res://.godot/imported/心电图存活.png-71d6b130c25976f7420c9ca8a044e769.ctex"]
+source_file="res://素材/RPhone_01.png"
+dest_files=["res://.godot/imported/RPhone_01.png-9bea341900f80f97bcea0003245080a3.ctex"]
 
 [params]
 

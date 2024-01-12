@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceuqty8ske2y3"
-path="res://.godot/imported/RoleUI.png-af1d3e780bffb7d06aa10e913374fe3b.ctex"
+uid="uid://cy4fnkmwhtlvn"
+path="res://.godot/imported/身份码.png-69c3143350f9d1ccf4647bf5d43f6d45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/RoleUI.png"
-dest_files=["res://.godot/imported/RoleUI.png-af1d3e780bffb7d06aa10e913374fe3b.ctex"]
+source_file="res://素材/身份码.png"
+dest_files=["res://.godot/imported/身份码.png-69c3143350f9d1ccf4647bf5d43f6d45.ctex"]
 
 [params]
 

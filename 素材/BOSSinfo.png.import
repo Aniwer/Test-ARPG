@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmq8yq6fh6aoh"
-path="res://.godot/imported/Timer.png-b01d862074db2785193e8af22d02d331.ctex"
+uid="uid://blqkg0bgqlveb"
+path="res://.godot/imported/BOSSinfo.png-c5a62c3eebac550eeb4cc51dc6306931.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/Timer.png"
-dest_files=["res://.godot/imported/Timer.png-b01d862074db2785193e8af22d02d331.ctex"]
+source_file="res://素材/BOSSinfo.png"
+dest_files=["res://.godot/imported/BOSSinfo.png-c5a62c3eebac550eeb4cc51dc6306931.ctex"]
 
 [params]
 

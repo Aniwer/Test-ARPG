@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://hiob07abtghr"]
+[gd_scene load_steps=11 format=3 uid="uid://hiob07abtghr"]
 
 [ext_resource type="Texture2D" uid="uid://q814wnidw51p" path="res://World/GrassBackground.png" id="1_hv8ys"]
 [ext_resource type="PackedScene" uid="uid://yc57mmoyb2ub" path="res://Player/player.tscn" id="2_iip6v"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bimksq018q4my" path="res://Enemies/bat.tscn" id="7_otudc"]
 [ext_resource type="PackedScene" uid="uid://db35axla4nu4p" path="res://UI/health_ui.tscn" id="8_26ltf"]
 [ext_resource type="PackedScene" uid="uid://bab38ee7mpdvq" path="res://World/tree.tscn" id="9_p6545"]
-[ext_resource type="PackedScene" uid="uid://cagwdwe8hxhg" path="res://NPC/npc.tscn" id="11_i6pke"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_uhvly"]
 tile_data = PackedInt32Array(0, 2, 0, 65536, 2, 1, 131072, 2, 2, 1, 65538, 0, 65537, 65538, 1, 131073, 65538, 2, 2, 131074, 0, 65538, 131074, 1, 131074, 131074, 2)
@@ -130,8 +129,3 @@ offset_left = 8.0
 offset_top = 4.0
 offset_right = 50.0
 offset_bottom = 18.0
-
-[node name="NPC" parent="." instance=ExtResource("11_i6pke")]
-y_sort_enabled = true
-position = Vector2(200, -31)
-collision_mask = 1

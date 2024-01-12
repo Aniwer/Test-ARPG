@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0rsokiq4d7i5"
-path="res://.godot/imported/ItemGui.png-a797cccccad1ebf473cfd36dec05db76.ctex"
+uid="uid://dkc8itte6bm0q"
+path="res://.godot/imported/心电图存活.png-285d97ae87e15bc9544dc480d0e83d31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/ItemGui.png"
-dest_files=["res://.godot/imported/ItemGui.png-a797cccccad1ebf473cfd36dec05db76.ctex"]
+source_file="res://素材/心电图存活.png"
+dest_files=["res://.godot/imported/心电图存活.png-285d97ae87e15bc9544dc480d0e83d31.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://tjhcu6yds8lc"]
+[gd_scene load_steps=17 format=3 uid="uid://tjhcu6yds8lc"]
 
 [ext_resource type="Texture2D" uid="uid://q814wnidw51p" path="res://World/GrassBackground.png" id="1_1vnpn"]
 [ext_resource type="Texture2D" uid="uid://b21smdd4rst3s" path="res://World/DirtTileset.png" id="2_py3f0"]
@@ -9,7 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bimksq018q4my" path="res://Enemies/bat.tscn" id="7_sxwx7"]
 [ext_resource type="PackedScene" uid="uid://bab38ee7mpdvq" path="res://World/tree.tscn" id="8_vnbak"]
 [ext_resource type="PackedScene" uid="uid://db35axla4nu4p" path="res://UI/health_ui.tscn" id="9_kwqh4"]
-[ext_resource type="PackedScene" uid="uid://cagwdwe8hxhg" path="res://NPC/npc.tscn" id="10_2trlc"]
+[ext_resource type="PackedScene" uid="uid://cagwdwe8hxhg" path="res://NPC/npc.tscn" id="10_t7hy5"]
+[ext_resource type="PackedScene" uid="uid://c2gwi33yhmteg" path="res://steam_vent.tscn" id="11_c45sw"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_uhvly"]
 tile_data = PackedInt32Array(0, 2, 0, 65536, 2, 1, 131072, 2, 2, 1, 65538, 0, 65537, 65538, 1, 131073, 65538, 2, 2, 131074, 0, 65538, 131074, 1, 131074, 131074, 2)
@@ -948,10 +949,11 @@ terrain_set_0/terrain_0/name = "cliff"
 terrain_set_0/terrain_0/color = Color(0.639216, 0.172549, 0.431373, 1)
 sources/1 = SubResource("TileSetAtlasSource_473m2")
 
-[node name="Node2D" type="Node2D"]
+[node name="world" type="Node2D"]
 y_sort_enabled = true
 
 [node name="Background" type="Sprite2D" parent="."]
+y_sort_enabled = true
 texture_repeat = 2
 position = Vector2(-48, -71)
 scale = Vector2(1.4, 1.68889)
@@ -1052,7 +1054,10 @@ offset_top = 4.0
 offset_right = 50.0
 offset_bottom = 18.0
 
-[node name="NPC" parent="." instance=ExtResource("10_2trlc")]
-y_sort_enabled = true
+[node name="NPC" parent="." instance=ExtResource("10_t7hy5")]
 position = Vector2(200, -31)
 collision_mask = 1
+
+[node name="SteamVent" parent="." instance=ExtResource("11_c45sw")]
+y_sort_enabled = true
+position = Vector2(161, 127)

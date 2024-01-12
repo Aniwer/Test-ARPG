@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u6rsljql1j0l"
-path="res://.godot/imported/TextUI.png-8029e24f84cb9e4935a1b2979a135f3b.ctex"
+uid="uid://xplx0uxbky4t"
+path="res://.godot/imported/设置菜单-内容框.png-42e9265148a5faed8ad08cd473a6e226.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/TextUI.png"
-dest_files=["res://.godot/imported/TextUI.png-8029e24f84cb9e4935a1b2979a135f3b.ctex"]
+source_file="res://素材/设置菜单-内容框.png"
+dest_files=["res://.godot/imported/设置菜单-内容框.png-42e9265148a5faed8ad08cd473a6e226.ctex"]
 
 [params]
 

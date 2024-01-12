@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bimksq018q4my"]
+[gd_scene load_steps=31 format=3 uid="uid://bimksq018q4my"]
 
 [ext_resource type="Script" path="res://Enemies/bat.gd" id="1_eou2k"]
 [ext_resource type="Texture2D" uid="uid://bgxtvinjpnq1e" path="res://Enemies/Bat.png" id="1_u43s2"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dy3o6qiwvw647" path="res://Boxes/hit_box.tscn" id="7_wt1b0"]
 [ext_resource type="PackedScene" uid="uid://oa4waysdaxr5" path="res://Boxes/soft_collison.tscn" id="8_y78ct"]
 [ext_resource type="PackedScene" uid="uid://cil5a2a6nvc6g" path="res://Enemies/wander_controller.tscn" id="9_l2yix"]
+[ext_resource type="Texture2D" uid="uid://b0d64n73qyish" path="res://素材/white.png" id="11_8j2ef"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_u0ryp"]
 resource_local_to_scene = true
@@ -119,6 +120,23 @@ _data = {
 "stop": SubResource("Animation_s3ifq")
 }
 
+[sub_resource type="Gradient" id="Gradient_cjgb1"]
+offsets = PackedFloat32Array(0.00515464, 0.994845, 1)
+colors = PackedColorArray(0.679015, 2.86378e-06, 2.88785e-07, 1, 0.958422, 0.870467, 0.870466, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_w8s78"]
+gradient = SubResource("Gradient_cjgb1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_pr0i2"]
+particle_flag_disable_z = true
+spread = 37.815
+initial_velocity_min = 328.0
+initial_velocity_max = 456.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.01
+scale_max = 0.1
+color_ramp = SubResource("GradientTexture1D_w8s78")
+
 [node name="Bat" type="CharacterBody2D"]
 collision_layer = 16
 script = ExtResource("1_eou2k")
@@ -176,6 +194,15 @@ debug_color = Color(0.192157, 0.627451, 0.392157, 0.419608)
 libraries = {
 "": SubResource("AnimationLibrary_ltrln")
 }
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(0, -15)
+emitting = false
+amount = 200
+process_material = SubResource("ParticleProcessMaterial_pr0i2")
+texture = ExtResource("11_8j2ef")
+lifetime = 0.5
+one_shot = true
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="invincible_ended" from="HurtBox" to="." method="_on_hurt_box_invincible_ended"]
