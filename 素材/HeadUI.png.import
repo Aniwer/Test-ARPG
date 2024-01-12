@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy4fnkmwhtlvn"
-path="res://.godot/imported/身份码.png-809b6163ccd292780c098e8259a29a69.ctex"
+uid="uid://cmnoyscg3v187"
+path="res://.godot/imported/HeadUI.png-2e954f96c33e4737857e1a3d3e658f80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/身份码.png"
-dest_files=["res://.godot/imported/身份码.png-809b6163ccd292780c098e8259a29a69.ctex"]
+source_file="res://素材/HeadUI.png"
+dest_files=["res://.godot/imported/HeadUI.png-2e954f96c33e4737857e1a3d3e658f80.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4th3qq7t4krw"
-path="res://.godot/imported/Role.png-012d5f180532e220327e98805f261b9d.ctex"
+uid="uid://b0w0ssey8pk5o"
+path="res://.godot/imported/Bot_Left.png-b11eb46b8a9245a731d079b1a3e93bac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/Role.png"
-dest_files=["res://.godot/imported/Role.png-012d5f180532e220327e98805f261b9d.ctex"]
+source_file="res://素材/Bot_Left.png"
+dest_files=["res://.godot/imported/Bot_Left.png-b11eb46b8a9245a731d079b1a3e93bac.ctex"]
 
 [params]
 

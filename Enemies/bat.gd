@@ -24,6 +24,7 @@ var moving_state = CHASE
 @onready var softCollision = $SoftCollison
 @onready var wanderController = $WanderController
 @onready var animationPlayer = $AnimationPlayer
+@onready var particles = $GPUParticles2D
 
 func _ready():
 	moving_state = pick_random_state([IDLE, WANDER])
@@ -79,10 +80,12 @@ func pick_random_state(state_list):
 
 func _on_hurt_box_area_entered(area):
 	# velocity = area.knockback_vector * KNOCK_BACK
+	particles.emitting = true
 	velocity = (area.global_position - global_position).normalized() * KNOCK_BACK
 	hurtBox.create_hit_effect()
 	hurtBox.start_invincibility(INVINCIBLIITY_DURATION)
 	state.health -= area.damage
+
 
 func _on_states_no_health():
 	create_enemy_death_effect()

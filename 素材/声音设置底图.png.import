@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blqkg0bgqlveb"
-path="res://.godot/imported/BOSSinfo.png-dda76d460f6ef73e494ab45dded27c1b.ctex"
+uid="uid://dirlalpxgqu2s"
+path="res://.godot/imported/声音设置底图.png-70c1de86e0490f32036ae3d2c8f29fc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/BOSSinfo.png"
-dest_files=["res://.godot/imported/BOSSinfo.png-dda76d460f6ef73e494ab45dded27c1b.ctex"]
+source_file="res://素材/声音设置底图.png"
+dest_files=["res://.godot/imported/声音设置底图.png-70c1de86e0490f32036ae3d2c8f29fc4.ctex"]
 
 [params]
 

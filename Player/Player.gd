@@ -17,6 +17,7 @@ var moving_state = MOVE
 var roll_vector = Vector2.DOWN
 var state = PlayerStates
 var dialog = Dialog
+
 @onready var animationPlayer = $AnimationPlayer
 @onready var animationTree = $AnimationTree
 @onready var animationState = animationTree.get("parameters/playback")
@@ -61,7 +62,6 @@ func move_state(delta):
 	else:
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-		
 	move_and_slide()
 	
 	if Input.is_action_just_pressed("roll"):
@@ -79,7 +79,8 @@ func roll_state(delta):
 func attack_state(delta):
 	velocity = Vector2.ZERO
 	animationState.travel("Attack")
-
+	
+	
 func roll_animation_finished():
 	velocity = Vector2.ZERO
 	moving_state = MOVE

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0w0ssey8pk5o"
-path="res://.godot/imported/Bot_Left.png-cffb65bbe03bbbcbc38e4949f0ed7b0f.ctex"
+uid="uid://dkop5g7g4t4oy"
+path="res://.godot/imported/ventilation_hole.png-b78afb68fd3a4b1f3099fb8c44b5f615.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/Bot_Left.png"
-dest_files=["res://.godot/imported/Bot_Left.png-cffb65bbe03bbbcbc38e4949f0ed7b0f.ctex"]
+source_file="res://素材/ventilation_hole.png"
+dest_files=["res://.godot/imported/ventilation_hole.png-b78afb68fd3a4b1f3099fb8c44b5f615.ctex"]
 
 [params]
 

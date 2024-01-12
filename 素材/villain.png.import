@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nr6qxk7tvkwm"
-path="res://.godot/imported/villain.png-9a5145bd3b3631c6daa1b813951370a6.ctex"
+path="res://.godot/imported/villain.png-7500b74d6809aae1631077b36d421c4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/villain.png"
-dest_files=["res://.godot/imported/villain.png-9a5145bd3b3631c6daa1b813951370a6.ctex"]
+source_file="res://素材/villain.png"
+dest_files=["res://.godot/imported/villain.png-7500b74d6809aae1631077b36d421c4f.ctex"]
 
 [params]
 

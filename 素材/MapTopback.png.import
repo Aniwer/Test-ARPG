@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dirlalpxgqu2s"
-path="res://.godot/imported/声音设置底图.png-2e2ea2ead0e5e002bd97290f6977d674.ctex"
+uid="uid://cna6d43u0kcq2"
+path="res://.godot/imported/MapTopback.png-f220c3ee5310996a2ba0e9b29d44519e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/声音设置底图.png"
-dest_files=["res://.godot/imported/声音设置底图.png-2e2ea2ead0e5e002bd97290f6977d674.ctex"]
+source_file="res://素材/MapTopback.png"
+dest_files=["res://.godot/imported/MapTopback.png-f220c3ee5310996a2ba0e9b29d44519e.ctex"]
 
 [params]
 

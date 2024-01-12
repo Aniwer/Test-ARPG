@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmnoyscg3v187"
-path="res://.godot/imported/HeadUI.png-34a5e40a059e1f9690587ad7cc6dfafe.ctex"
+uid="uid://u6rsljql1j0l"
+path="res://.godot/imported/TextUI.png-9546dc5111bc2e2d272a322e20bbd26b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/HeadUI.png"
-dest_files=["res://.godot/imported/HeadUI.png-34a5e40a059e1f9690587ad7cc6dfafe.ctex"]
+source_file="res://素材/TextUI.png"
+dest_files=["res://.godot/imported/TextUI.png-9546dc5111bc2e2d272a322e20bbd26b.ctex"]
 
 [params]
 

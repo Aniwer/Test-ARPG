@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dgcjwh8c8we7f"]
 
-[ext_resource type="Texture2D" uid="uid://gifql3wcv03i" path="res://窗口/GUI.png" id="1_bbbt8"]
 [ext_resource type="Script" path="res://inventory/inv_ui_slot.gd" id="1_fkog8"]
+[ext_resource type="Texture2D" uid="uid://gifql3wcv03i" path="res://素材/GUI.png" id="2_nysl7"]
 
 [sub_resource type="FontFile" id="FontFile_jar0o"]
 subpixel_positioning = 0
@@ -24,7 +24,7 @@ script = ExtResource("1_fkog8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("1_bbbt8")
+texture = ExtResource("2_nysl7")
 centered = false
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -42,9 +42,9 @@ visible = false
 custom_minimum_size = Vector2(19, 26)
 layout_mode = 0
 offset_left = -1.0
-offset_top = -2.0
-offset_right = 17.0
-offset_bottom = 21.0
+offset_top = -1.0
+offset_right = 18.0
+offset_bottom = 25.0
 scale = Vector2(0.5, 0.5)
 theme = SubResource("Theme_fmk4r")
 theme_override_colors/font_color = Color(0, 0, 0, 1)

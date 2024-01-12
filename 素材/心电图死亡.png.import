@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbwa7g58jvkml"
-path="res://.godot/imported/RPhone_01.png-ca876f3effe84a8fa837269ed0721b02.ctex"
+uid="uid://0vgs3k1uixrq"
+path="res://.godot/imported/心电图死亡.png-50d520c889690f8d253551d26062e141.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/RPhone_01.png"
-dest_files=["res://.godot/imported/RPhone_01.png-ca876f3effe84a8fa837269ed0721b02.ctex"]
+source_file="res://素材/心电图死亡.png"
+dest_files=["res://.godot/imported/心电图死亡.png-50d520c889690f8d253551d26062e141.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3h7q2yw3rcgo"
-path="res://.godot/imported/RPhone_02.png-48212be350fd62fa52c882db5b0bdbb1.ctex"
+uid="uid://d0rsokiq4d7i5"
+path="res://.godot/imported/ItemGui.png-f8b22ea412a95599bd3828e9dbede509.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/RPhone_02.png"
-dest_files=["res://.godot/imported/RPhone_02.png-48212be350fd62fa52c882db5b0bdbb1.ctex"]
+source_file="res://素材/ItemGui.png"
+dest_files=["res://.godot/imported/ItemGui.png-f8b22ea412a95599bd3828e9dbede509.ctex"]
 
 [params]
 

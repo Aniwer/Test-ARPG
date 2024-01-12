@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cna6d43u0kcq2"
-path="res://.godot/imported/MapTopback.png-d3dfb7abf4f25d8345f677474498c07d.ctex"
+uid="uid://cmq8yq6fh6aoh"
+path="res://.godot/imported/Timer.png-41c11e83c2103b80cdd690142215b55f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/MapTopback.png"
-dest_files=["res://.godot/imported/MapTopback.png-d3dfb7abf4f25d8345f677474498c07d.ctex"]
+source_file="res://素材/Timer.png"
+dest_files=["res://.godot/imported/Timer.png-41c11e83c2103b80cdd690142215b55f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y1njp7hwkgve"
-path="res://.godot/imported/气泡三角.png-4c9fe5b9d17ae552abb0e49168241e15.ctex"
+uid="uid://cgh3pwy4lguxi"
+path="res://.godot/imported/气泡.png-02f06853d6122b97c1f4377d34bd8994.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/气泡三角.png"
-dest_files=["res://.godot/imported/气泡三角.png-4c9fe5b9d17ae552abb0e49168241e15.ctex"]
+source_file="res://素材/气泡.png"
+dest_files=["res://.godot/imported/气泡.png-02f06853d6122b97c1f4377d34bd8994.ctex"]
 
 [params]
 

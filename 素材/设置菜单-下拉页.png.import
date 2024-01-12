@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4shje6uywrg3"
-path="res://.godot/imported/black1.png-33e39387c10c8d782a0490b310ff7724.ctex"
+uid="uid://dry2yslefe31c"
+path="res://.godot/imported/设置菜单-下拉页.png-ad73477fb7c356c8f1d97f36bb763dff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://窗口/black1.png"
-dest_files=["res://.godot/imported/black1.png-33e39387c10c8d782a0490b310ff7724.ctex"]
+source_file="res://素材/设置菜单-下拉页.png"
+dest_files=["res://.godot/imported/设置菜单-下拉页.png-ad73477fb7c356c8f1d97f36bb763dff.ctex"]
 
 [params]
 
