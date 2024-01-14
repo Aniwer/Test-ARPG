@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgcjwh8c8we7f"]
+[gd_scene load_steps=6 format=3 uid="uid://dgcjwh8c8we7f"]
 
 [ext_resource type="Script" path="res://inventory/inv_ui_slot.gd" id="1_fkog8"]
 [ext_resource type="Texture2D" uid="uid://gifql3wcv03i" path="res://素材/GUI.png" id="2_nysl7"]
@@ -16,6 +16,8 @@ cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [sub_resource type="Theme" id="Theme_fmk4r"]
 default_font = SubResource("FontFile_jar0o")
+
+[sub_resource type="Theme" id="Theme_0w42m"]
 
 [node name="inv_UI_slot" type="Panel"]
 offset_right = 16.0
@@ -50,3 +52,15 @@ theme = SubResource("Theme_fmk4r")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "99"
 horizontal_alignment = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+theme = SubResource("Theme_0w42m")
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

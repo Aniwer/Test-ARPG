@@ -105,5 +105,5 @@ func player():
 	pass
 	
 func collect(item):
-	print(item)
 	inv.insert(item)
+	

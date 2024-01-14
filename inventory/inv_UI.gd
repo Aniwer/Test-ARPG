@@ -1,12 +1,14 @@
 extends Control
 
 @onready var inv: Inv = preload("res://inventory/playerInv.tres")
-@onready var slots: Array = $NinePatchRect/GridContainer.get_children()
+@onready var hBox: Array = $ScrollContainer/VBoxContainer.get_children()
 
-
+var slots: Array = []
 var is_open = false
 
 func  _ready():
+	for i in range(hBox.size()):
+		slots += hBox[i].get_children()
 	inv.update.connect(update_slots)
 	update_slots()
 	close()
@@ -29,3 +31,9 @@ func close():
 func open():
 	visible = true
 	is_open = true
+
+func sort():
+	slots.sort_custom(compare)
+	
+func compare(a, b):
+	return a == null

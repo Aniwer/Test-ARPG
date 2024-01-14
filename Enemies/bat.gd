@@ -9,6 +9,7 @@ const INVINCIBLIITY_DURATION = 0.4
 @export var FRICTION = 200
 @export var MAX_SPEED = 100
 @export var WANDER_TARGET_RANGE = 5
+@export var item: InvItem
 
 enum {
 	IDLE,
@@ -17,6 +18,8 @@ enum {
 }
 
 var moving_state = CHASE
+var player = null
+
 @onready var animatedSprite = $AnimatedSprite
 @onready var state = $States
 @onready var playerDetection = $PlayerDetection
@@ -72,7 +75,8 @@ func create_enemy_death_effect():
 	enemyDeathEffectInstance.global_position = global_position
 	
 func seek_player():
-	if playerDetection.can_see_player():
+	player = playerDetection.can_see_player()
+	if player != null:
 		moving_state = CHASE
 
 func pick_random_state(state_list):
@@ -90,6 +94,7 @@ func _on_hurt_box_area_entered(area):
 func _on_states_no_health():
 	create_enemy_death_effect()
 	queue_free()
+	player.collect(item)
 
 func _on_hurt_box_invincible_started():
 	animationPlayer.play("start")

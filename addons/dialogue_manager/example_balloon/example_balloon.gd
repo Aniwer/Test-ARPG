@@ -90,9 +90,7 @@ func start(dialogue_resource: DialogueResource, title: String, extra_game_states
 func next(next_id: String) -> void:
 	self.dialogue_line = await resource.get_next_dialogue_line(next_id, temporary_game_states)
 
-
 ### Signals
-
 
 func _on_mutated(_mutation: Dictionary) -> void:
 	is_waiting_for_input = false

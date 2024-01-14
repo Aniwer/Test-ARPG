@@ -1,8 +1,9 @@
-[gd_scene load_steps=31 format=3 uid="uid://bimksq018q4my"]
+[gd_scene load_steps=32 format=3 uid="uid://bimksq018q4my"]
 
 [ext_resource type="Script" path="res://Enemies/bat.gd" id="1_eou2k"]
 [ext_resource type="Texture2D" uid="uid://bgxtvinjpnq1e" path="res://Enemies/Bat.png" id="1_u43s2"]
 [ext_resource type="Shader" path="res://white_color.gdshader" id="2_buma7"]
+[ext_resource type="Resource" uid="uid://cqxvjyvdjxg4w" path="res://inventory/item/bat.tres" id="2_mjwco"]
 [ext_resource type="Texture2D" uid="uid://17cvu2tnjqdf" path="res://Shadows/SmallShadow.png" id="2_sddgl"]
 [ext_resource type="PackedScene" uid="uid://cnp2m06ynxldu" path="res://Boxes/hurt_box.tscn" id="4_8jkd5"]
 [ext_resource type="PackedScene" uid="uid://nvt04yktcp6l" path="res://states.tscn" id="5_exhjp"]
@@ -141,6 +142,7 @@ color_ramp = SubResource("GradientTexture1D_w8s78")
 collision_layer = 16
 script = ExtResource("1_eou2k")
 FRICTION = 100
+item = ExtResource("2_mjwco")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 material = SubResource("ShaderMaterial_u0ryp")

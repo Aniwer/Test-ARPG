@@ -1,7 +1,12 @@
 extends Panel
 
+var item: InvItem = null
+var self_slot: InvSlot = null
+
 @onready var item_visual: Sprite2D = $CenterContainer/Panel/item_display
 @onready var amount_text: Label = $CenterContainer/Panel/Label
+
+var state = PlayerStates
 
 func update(slot: InvSlot):
 	if !slot.item:
@@ -13,7 +18,17 @@ func update(slot: InvSlot):
 		if slot.amount > 1:
 			amount_text.visible = true
 			amount_text.text = str(slot.amount)
+		elif slot.amount == 1:
+			amount_text.visible = false
+		item = slot.item
+		self_slot = slot
 
+func use_item(slot: InvSlot):
+	slot.amount -= 1
+	if slot.amount == 0:
+		slot.item = null
+	update(slot)
+	state.health += 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,3 +38,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_button_pressed():
+	if self_slot.item != null && state.health < state.max_health:
+		use_item(self_slot)
